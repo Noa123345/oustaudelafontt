@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'Oustau de la Font - Hôtel</title>
+
+    <!--lib-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/b6ca3af668.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="texte/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
+
+
+   
+  </head>
+  <body>
+   
+    
+
+   <nav>
+    
+    <h1>L'Oustau de la Font</h1>
+     <div class="nav_links">
+      <ul>
+      <li><a href="page1.html" >Accueil</a></li>
+      <li><a href="page1.html#Noschambres">Nos chambres</a></li>
+      <li><a href="#contact.html">Contact</a></li>
+    </ul>
+    </div>
+
+    <bouton class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </bouton>
+  </div>
+   </nav>
+
+
+
+<header1>
+  <div class="textes" data-aos="fade-up">
+    <h1> R   h   e   i   l   l   a   n   e   t   t   e</h1>
+    <h2> Hotel l'Oustau de la Font</h2>
+ <h3> Bienvenue à Rheillanette, terre de  </h3>
+ <h3> promesse où bien-être et</h3>
+ <h3> authenticité sauront vous séduire.</h3>
+ </div>
+ <div class="gris">
+  <h3> Nous contacter</h3>
+ </div>
+</header1>
+
+
+
+<script>
+  const menuHamburger = document.querySelector(".hamburger")
+  const navLinks = document.querySelector(".nav_links")
+
+  menuHamburger.addEventListener('click',()=>{
+  navLinks.classList.toggle('mobile-menu')
+  })
+</script>
+
+<section class="contact">
+  <div class="continer">
+    <div class="contactInfo">
+      <div class="box">
+
+        <div class="icon"><i class="fa-regular fa-location-dot"></i></div>
+        <div class="text">
+          <h3> Adresse</h3>
+          <h4> 240 montée du village - 26570 Reilhanette</h4>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+        <div class="text">
+          <h3> Email</h3>
+          <h4> info@oustaudelafont.com</h4>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="text">
+          <h3> Téléphone</h3>
+          <h4> 04 75 28 83 77</h4>
+        </div>
+    </div>
+    </div>
+
+    <div class="contactForm">
+      <form action="https://formspree.io/f/xayzydjz" method="POST">
+        <h2>Envoyer un message</h2>
+        <div class="inputBox">
+
+          <input type="text" name="" required="required">
+          <span>Nom</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="text" name="" required="required">
+          <span>Email</span>
+        </div>
+
+        <div class="inputBox">
+          <textarea required="required"></textarea>
+          <span>tapez votre message...</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="submit" name="" value="Envoyer">
+        </div>
+
+      </form>
+    </div>
+  </div>      
+       
+</section>
+
+
+
+
+
+ 
+
+
+<footer class="footer">
+
+  <div class="container">
+    <div class="row2">
+      <div class="footer-col">
+        <h4>Articles récents</h4>
+        <ul>
+          <li><a href='#'>le magnétisme à l'Oustau</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4> Nos coordonnées</h4>
+        <ul>
+          <li><a href='#none'>Téléphone: 04 75 28 83 77</a></li>
+          <li><a href='#none'>Email: info@oustaudelafont.com</a></li>
+          <li><a href="https://www.google.com/maps/place/L'Oustau+de+la+Font/@44.1676519,5.4188402,17z/data=!4m18!1m9!3m8!1s0x12ca5dbb45d45301:0xb342775fa593c292!2sL'Oustau+de+la+Font!5m2!4m1!1i2!8m2!3d44.1676525!4d5.4210196!3m7!1s0x12ca5dbb45d45301:0xb342775fa593c292!5m2!4m1!1i2!8m2!3d44.1676525!4d5.4210196">Adresse: 240 montée du village - 26570 Reilhanette</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Réseaux sociaux</h4>
+        <div class="social-links">
+         <a href="https://fr-fr.facebook.com/oustaudelafont/"><i class="fa-brands fa-facebook"></i></a>
+         <a href="https://www.instagram.com/oustaudelafont26/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>copyright &copy;2023 Haidev. designed by <span> dromedev<span></p>
+  </div>
+</footer>
+
+   
+
+
+<!-- animation -->
+<script>
+  AOS.init();
+</script>  
+ <!--js-->
+<script src="javascript/main.js"></script>
+</body>
+</html>
+    
